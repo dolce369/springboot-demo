@@ -1,6 +1,6 @@
 /target/
 .classpath
-# .gitignore should be included and checkin to the repository.
+# .gitignore should be added and push to the git repository.
 # however, in case if you want to ignore your own local files, do not include in .gitignore
 # add those files at .git/info/exclude
 # .gitignore

@@ -20,8 +20,10 @@ public class ExcelHelper {
 
     // 
     public static ByteArrayInputStream toExcel(List<Person> students){
-        try(Workbook workbook = new XSSFWorkbook();
+
+        try(XSSFWorkbook workbook = new XSSFWorkbook();
             ByteArrayOutputStream out = new ByteArrayOutputStream();) {
+
             Sheet sheet = workbook.createSheet(SHEET);
             Row header = sheet.createRow(0);      
             for(int i=0; i<HEADERs.length; i++){
